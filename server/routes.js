@@ -1,9 +1,12 @@
+
 /**
  * Main application routes
  */
 
 'use strict';
+
 var stormpathExpressSdk = require('stormpath-sdk-express');
+
 
 var errors = require('./components/errors');
 var spMiddleware = stormpathExpressSdk.createMiddleware();

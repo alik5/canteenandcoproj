@@ -15,10 +15,20 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
     padding: 0.2em 0;
 }
 
+
+
+@media screen and (max-device-width: 800px) {
+	body { background: #000 no-repeat center center fixed; }
+	#myVideo { display: none; }
+}
+
 // Component styles are injected through grunt
 // injector
 @import 'login/login.scss';
 @import 'main/main.scss';
+@import 'passwordReset/passwordReset.scss';
+@import 'passwordResetRequest/passwordResetRequest.scss';
 @import 'profile/profile.scss';
 @import 'register/register.scss';
+@import 'video/video.scss';
 // endinjector

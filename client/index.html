@@ -13,6 +13,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(client) app/vendor.css -->
       <!-- bower:css -->
+      <link rel="stylesheet" href="bower_components/angular-video-background/dist/vidBg.css" />
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,client}) app/app.css -->
@@ -28,6 +29,7 @@
 
     <!-- Add your site or application content here -->
     <div ui-view=""></div>
+    
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
@@ -39,6 +41,8 @@
       ga('create', 'UA-XXXXX-X');
       ga('send', 'pageview');
     </script>
+
+
 
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -55,7 +59,9 @@
       <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
       <script src="bower_components/stormpath-sdk-angularjs/dist/stormpath-sdk-angularjs.min.js"></script>
       <script src="bower_components/stormpath-sdk-angularjs/dist/stormpath-sdk-angularjs.tpls.min.js"></script>
+      <script src="bower_components/angular-video-background/dist/vidBg.js"></script>
       <!-- endbower -->
+      <script src="bower_components/angular-instagram/dist/angular-instagram.js"></script>
     <!-- endbuild -->
 
         <!-- build:js({.tmp,client}) app/app.js -->
@@ -65,10 +71,16 @@
           <script src="app/login/login.js"></script>
           <script src="app/main/main.controller.js"></script>
           <script src="app/main/main.js"></script>
+          <script src="app/passwordReset/passwordReset.controller.js"></script>
+          <script src="app/passwordReset/passwordReset.js"></script>
+          <script src="app/passwordResetRequest/passwordResetRequest.controller.js"></script>
+          <script src="app/passwordResetRequest/passwordResetRequest.js"></script>
           <script src="app/profile/profile.controller.js"></script>
           <script src="app/profile/profile.js"></script>
           <script src="app/register/register.controller.js"></script>
           <script src="app/register/register.js"></script>
+          <script src="app/video/video.controller.js"></script>
+          <script src="app/video/video.js"></script>
           <script src="components/navbar/navbar.controller.js"></script>
           <!-- endinjector -->
         <!-- endbuild -->

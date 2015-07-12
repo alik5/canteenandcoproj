@@ -6,7 +6,8 @@ angular.module('dashboardAppApp', [
   'ngSanitize',
   'ui.router',
   'stormpath',
-  'stormpath.templates'
+  'stormpath.templates',
+  'fxInstagram',
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider
@@ -19,4 +20,9 @@ angular.module('dashboardAppApp', [
     loginState: 'login',
     defaultPostLoginState: 'main'
   });
-});
+})
+
+
+
+
+
