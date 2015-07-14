@@ -18,7 +18,7 @@ body {
 }
 
 .text-primary {
-    color: #fed136;
+    color: #B0D66B;
 }
 
 p {
@@ -56,8 +56,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Antic', sans-serif;
 }
 
 .img-centered {
@@ -73,12 +72,12 @@ h6 {
 }
 
 .btn-primary {
-    border-color: #fed136;
+    border-color: #B0D66B;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #fed136;
+    background-color: #B0D66B;
 }
 
 .btn-primary:hover,
@@ -882,7 +881,7 @@ body {
 }
 
 .images-insta {
-    width: 60%; 
+    width: 70%; 
     height: auto;
     border-radius: 25px;
     border: solid;
@@ -894,7 +893,7 @@ body {
 .headers {
     text-align: center; 
     margin: 5%;
-    font-family: 'Hind', sans-serif;
+    font-family: 'Antic', sans-serif;
     font-weight: 300; 
     font-size: 5em;
 }
@@ -988,13 +987,11 @@ button .btn {
 }
 
 .yellow {
-    background-color: #fec503;
+    background-color: #B0D66B;
     font-style: italic; 
+    padding: 4%; 
 }
 
-.yellow {
-    font-size: 1.2em;
-}
 
 .testimonial-photo {
     width: 75%;
