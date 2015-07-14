@@ -14,38 +14,45 @@
 
       
      <p class="transitions">
-        <a ng-click="showme=true" ng-hide="showme" class="btn btn-primary btn-lg" href="#" role="button">Place Order</a> 
-        <a ng-show="showme"class="btn btn-primary btn-lg" href="#" role="button">Pick Up</a>
-        <a ng-show="showme" class="btn btn-primary btn-lg" href="#" role="button">Catering</a>      
+        <a ng-click="showme=true" ng-hide="showme" class="btn btn-primary btn-lg" href="#" role="button">Today's Bowl</a>     
       </p> 
     
       
   </div><!--end of header-container -->
 
+
+
 <div class="featured bgcolor">
   <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="headers">Today's Menu</h2>
-          </div><!--end col-md-9 -->
-          <div class="col-md-7">
+            <h2 class="headers">Today's Bowl</h2>
+          </div><!--end col-md-11 -->
+          <div class="col-md-1"></div>
+        </div>
+          <div class="row">
+            <div class="col-md-7">
               <div class="panel">
                 <div fx-instagram client-id="6f893f44aa71400b8fdc7d0608ae3bdd" user-id="1802938473" count="1">
                 
                   <img class="images-insta" ng-repeat="img in instaImgs" ng-attr-src="{{ img.images.standard_resolution.url }}" alt="">
                
                 </div>
-            </div><!--end panel-->
+              </div><!--end panel-->
             </div>
             <div class="col-md-5">
-           <ul class="falist">
-             <li><h4>Order Online</h4>
-             </li>
-             <li><h4>Start Your Own Community</h4>
-             <li><h4>Learn More</h4></i></li>
+              <ul class="transitions falist">
+           
+              <li><a ng-click="showme=true" ng-hide="showme" class="btn btn-primary btn-lg" href="#" role="button">Place Order</a></li>
+              <li><button ng-show="showme"class="btn btn-primary btn-lg  animate-show-hide" href="#" role="button">Pick Up</button></li>
+              <li><button ng-show="showme" class="btn btn-primary btn-lg  animate-show-hide" href="#" role="button">Catering</button> </li>     
+      
            </ul>
-            </div><!--end col-->
+
+            <img class="photo" src="assets/images/gram.png">
+            </div>
           </div>
+      </div>
     
   </div><!--end container-->
 </div><!--end featured -->
@@ -54,15 +61,44 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-              <div class="btn-options">
-                <a><img  class="button-effects" src="assets/images/foodstand275.png"></a>
-                <a><img class="button-effects" src="assets/images/lunch275.png"></a>
-                <a><img class="button-effects" src="assets/images/locations275.png"></a>
-              </div><!--end btn-options-->
-            </div><!--end col-->
+        <h2 class="headers">Let's Eat Better Together</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 elements">
+        <img class="button-effects" src="assets/images/clean.png">
+          <h2>Clean</h2>
+          <p>All the good stuff - Whole grains, fresh veggies, and heirloom beans - without the gunk. No chemical preservatives, refined flours, processed sugars, and hydrogenated oils. </p>
+      </div>
+       <div class="col-md-4 elements">
+          <img class="button-effects" src="assets/images/seasonal.png">
+          <h2>Seasonal</h2>
+          <p>Our daily bowl changes based on what’s fresh and local, and what tastes good today.</p>
+          
+      </div>
+      <div class="col-md-4 elements">
+        <img class="button-effects" src="assets/images/scratch.png">
+        <h2>From Scratch</h2>
+        <p>We’re a DIY kind of kitchen. We make our own sauces, soak our grains, and chop our veggies-  so it’s food we can feel good about. </p>
+      </div>
+              
+            </div><!--end row-->
           </div>
-      
-    </div><!--end row-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="yellow">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 right-align">
+         <img class="testimonial-photo" src="assets/images/ginsburg.jpg">
+      </div> 
+      <div class="col-lg-7 center-from-top">
+        <h4>"I Love Canteen and Co. Especially how one of them has a cool white eyebrow" - Pierre Kealey FitzGerald</h4>
+      </div>  
+    </div>
   </div>
 </div>
 
@@ -70,7 +106,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="headers">Make Lunch Social Again</h2> 
+        <h2 class="headers">JOIN THE CLUB</h2> 
         <div ng-include="'app/video/video.html'"></div>
     
 
@@ -85,12 +121,61 @@
    <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="headers">The Team</h2> 
+        <h2 class="headers">CSA-INSPIRED</h2> 
+         <div class="row">
+            <ul class="falist">
+              <div class="col-md-4 elements">
+                 <li><img class="button-effects" src="assets/images/ordering.png">
+                  <h2>Ordering</h2>
+                    </li> 
+              </div>
+               <div class="col-md-4 elements">
+                  <li><img class="button-effects" src="assets/images/membership.png">
+                  <h2>Membership (Savings)</h2>
+                  </li>
+               </div>
+              <div class="col-md-4 elements">
+                  <li>
+                  <img class="button-effects" src="assets/images/community.png">
+                  <h2>Community</h2>
+                  </li>
+              </div>
+            </ul>
       </div>   
     </div>
+    
+      <div class="col-md-12 center">
+        <a ng-click="" ng-hide="showme" class="btn btn-primary btn-lg" href="#" role="button">Order Now</a>
+      </div>
+    
   </div>
 </div>
-    
+<hr />
+    <div class="featured bgimage">
+   <div class="container">
+    <div class="row">
+     <h2 class="headers">ABOUT US</h2> 
+    <div class="col-lg-7 col-md-7">
+      <img class="photo" src="assets/images/canteen-3.png" alt="Canteen + Co.">
+    </div>
+      <div class="col-lg-5">
+       
+        <p> Canteen + Co. makes eating better possible.
+
+          We’re three former food truckers with an obsession with food - and a passion for people. We looked for clean food on the streets of Boston… but no such luck. We decided to bring clean food to you, and we’re inviting you to join us.
+
+
+          We got our start hosting a recurring community dinners as The Community Canteen. Once a month, we served up simple seasonal bowls to a rotating group of members. Turns out that people liked eating our food - and loved eating together.
+
+
+          We provide good clean food for gatherings. With our seasonal bowls and consciously sourced snacks we’re launching a new way of eating. Get connected with our community to join us for a dinner, follow us to find out where popping up next, or give us a ring to ask about our catering services.
+
+          Let’s eat better, together.
+        </p><!--end col-lg-5 -->
+      </div>   
+    </div><!-- end row -->
+  </div><!--end container -->
+</div><!--end featured bgimage -->
 
 
       

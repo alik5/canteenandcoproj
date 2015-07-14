@@ -6,7 +6,7 @@
 'use strict';
 
 var stormpathExpressSdk = require('stormpath-sdk-express');
-
+var sendgrid  = require('sendgrid');
 
 var errors = require('./components/errors');
 var spMiddleware = stormpathExpressSdk.createMiddleware();

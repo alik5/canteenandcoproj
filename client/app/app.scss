@@ -26,9 +26,17 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 // injector
 @import 'login/login.scss';
 @import 'main/main.scss';
+@import 'orderform/orderform.scss';
 @import 'passwordReset/passwordReset.scss';
 @import 'passwordResetRequest/passwordResetRequest.scss';
 @import 'profile/profile.scss';
 @import 'register/register.scss';
 @import 'video/video.scss';
 // endinjector
+
+
+.center {
+    text-align: center;
+    padding-top: -20px; 
+    padding-bottom: 20px;  
+}

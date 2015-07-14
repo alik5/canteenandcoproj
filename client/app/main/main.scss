@@ -899,19 +899,47 @@ body {
     font-size: 5em;
 }
 
-.btn-options {
+button .btn {
     text-align: center; 
-    margin: 20px;
+    margin: 10px;
+
 }
+
 
 
 .button-effects:hover {
     background-color: #FFE4B5;
 }
 
-.transitions a {
-    transition: opacity 2s ease-in;
+
+
+
+ 
+.animate-show-hide.ng-hide-add, .animate-show-hide.ng-hide-remove {
+  -webkit-transition:all ease 1s;
+  -moz-transition:all ease 1s;
+  -o-transition:all ease 1s;
+  transition:all ease 1s;
+ 
 }
+ 
+.animate-show-hide.ng-hide-add.ng-hide-add-active,
+.animate-show-hide.ng-hide-remove {
+  opacity:0;
+ 
+  
+
+}
+ 
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove.ng-hide-remove-active {
+  opacity:1;
+ 
+
+
+}
+
+
 
 .bgimage {
     background-image: url("../assets/images/cream_pixels.png")
@@ -948,6 +976,37 @@ body {
     background-image: url("../assets/images/bowl.jpg");
     background-size: cover; 
     opacity: 0.9; 
+}
+
+.elements {
+    text-align: center; 
+}
+
+.photo {
+    width: 100%;
+    height: auto; 
+}
+
+.yellow {
+    background-color: #fec503;
+    font-style: italic; 
+}
+
+.yellow {
+    font-size: 1.2em;
+}
+
+.testimonial-photo {
+    width: 75%;
+    border-radius: 25px; 
+}
+
+.right-align {
+    text-align: right; 
+}
+
+.center-from-top {
+   padding-top: 10%; 
 }
 
 

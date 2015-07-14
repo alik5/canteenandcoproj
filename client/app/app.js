@@ -8,6 +8,7 @@ angular.module('dashboardAppApp', [
   'stormpath',
   'stormpath.templates',
   'fxInstagram',
+  'ngAnimate'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider
@@ -21,7 +22,6 @@ angular.module('dashboardAppApp', [
     defaultPostLoginState: 'main'
   });
 })
-
 
 
 
