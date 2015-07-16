@@ -1,12 +1,22 @@
+<section ng-controller="OrderformCtrl">
+  <form name="emailForm">    
+        <div class="group">      
+          <input type="email" name="to" ng-model="email.to" ng-required="true">
+          <label>To</label>
+        </div>
+        <div>      
+          <input type="email" name="from" ng-model="email.from" ng-required="true">
+          <label>From</label>
+        </div>
+        <div>      
+          <input type="text" name="subject" ng-model="email.subject" ng-required="true">
+          <label>Subject</label>
+        </div>
+        <div>      
+            <textarea ng-model="email.text" name="email.text" placeholder="Enter Text Here.."></textarea>
+        </div>
 
-<section ng-controller="OrderformCtrl as contact">
-  <form name="contactForm" id="contactForm" ng-submit="contactForm.$valid && sendTheMail()" novalidate>
-    Name: <input type="text" id="userName" required><br>
-    Email: <input type="email" id="userEmail" required><br>
-    Subject: <input type="text" id="userSubject" required><br>
-    Message: <textarea type="text" id="userMessage" required>
-    </textarea><br>
-    <input type="submit" value="Submit" id="SubmitBtn">
-  </form>
+        <button id="emailSubmitBn" type="submit" ng-click="submitEmail()">
+            Submit
+        </button>
 </section>
-

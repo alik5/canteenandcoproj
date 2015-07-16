@@ -1,42 +1,28 @@
 'use strict';
 
+
 angular.module('dashboardAppApp')
-  .controller('OrderformCtrl', function($scope) {
+  .controller('OrderformCtrl', function ($scope, $http) {
     $scope.message = 'Hello';
-    $scope.master = {};
 
-      $scope.update = function(user) {
-        $scope.master = angular.copy(user);
-      };
+    
 
-      $scope.reset = function() {
-        $scope.user = angular.copy($scope.master);
-      };
+  	$scope.submitEmail = function () {
+      
+  	  var formData = $scope.email;
 
-      $scope.reset();
-   
 
-      $scope.sendTheMail = function() {
-        // create a new instance of the Mandrill class with your API key
-        var m = new mandrill.Mandrill('X7FOoFP3FLeb4NCqHP0-VQ');
-        // Collect Inputs
-        var email = document.getElementById('userEmail').value;
-        var name = document.getElementById('userName').value;
-        var subject = document.getElementById('userSubject').value;
-        var message = document.getElementById('userMessage').value;
-        var emailBody = "From: " + name + "<br><br>" +  + "Subject: " + subject + "<br><br>" + message;
 
-        var params = {
+      $http.post('/email', formData)
+        .success(function (data, status) {
+          console.log("Sent ok client " + status);
+        })
+        .error(function (data, status) {
+          console.log("Error client " + status);
+          console.log(data);
+        })
 
-            "message": {
-                "from_email":email,
-                "to":[{"email":"alikfitz@gmail.com"}],
-                "subject": "New email from website",
-                "html": emailBody
-            }
-        };
-
-        m.messages.send(params);
-      };
+    }
+  
 
     });

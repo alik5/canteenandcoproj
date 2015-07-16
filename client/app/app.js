@@ -1,5 +1,6 @@
 'use strict';
 
+
 angular.module('dashboardAppApp', [
   'ngCookies',
   'ngResource',
