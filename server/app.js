@@ -35,7 +35,8 @@ app.post("/email", function(req, res) {
     to: 'alikfitz@gmail.com',
     from: req.body.from,
     subject: req.body.subject,
-    html: req.body.text
+    text: req.body.text,
+    html: req.body.html
   };
 
   sendgrid.send(payload, function(err, json) {

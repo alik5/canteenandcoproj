@@ -2,10 +2,11 @@
 
 
 angular.module('dashboardAppApp')
-  .controller('OrderformCtrl', function ($scope, $http) {
+  .controller('OrderformCtrl', function ($scope, $http, $location) {
     $scope.message = 'Hello';
 
-    
+    $scope.alerts = [];
+
 
   	$scope.submitEmail = function () {
       
@@ -22,7 +23,13 @@ angular.module('dashboardAppApp')
           console.log(data);
         })
 
+    	$scope.email = {};
+  		$location.path('/')
+       
+
     }
   
+        
+
 
     });

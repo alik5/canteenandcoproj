@@ -941,11 +941,11 @@ button .btn {
 
 
 .bgimage {
-    background-image: url("../assets/images/cream_pixels.png")
+    background-image: url("../assets/images/cream_pixels.png");
 }
 
 .bgcolor {
-    background-color: white;
+    background-color: #FCFCFC;
 }
 
 .falist { 
@@ -963,11 +963,11 @@ button .btn {
 
 @media (min-width: 768px) {
 .featured {
-    padding-bottom: 100px;   
+    padding-bottom: 25px;    
     }
 .featured2 {
-    padding-bottom: 100px; 
-    padding-top: 100px;   
+    padding-bottom: 25px; 
+    padding-top: 25px;   
     }
 }
 
@@ -979,6 +979,15 @@ button .btn {
 
 .elements {
     text-align: center; 
+}
+
+.photo-border {
+    width: 87%;
+    height: auto; 
+    border: 2px solid grey;
+    border-radius: 25px; 
+    margin: 5%;
+    padding: 2%; 
 }
 
 .photo {
@@ -1005,6 +1014,34 @@ button .btn {
 .center-from-top {
    padding-top: 10%; 
 }
+
+#giant-font {
+    font-size: 7em; 
+    font-weight: 400; 
+    color: #B0D66B;
+    text-align: right; 
+}
+
+.desc {
+    font-family: 'Lato', sans-serif;
+    padding-top: 12%;
+}
+
+.desc-sm {
+    font-family: 'Lato', sans-serif;
+}
+
+#line-item {
+    color: black;
+    text-align: left;
+    font-family: 'Antic', sans-serif;
+    font-weight: 300;
+}
+
+#line-item i {
+    color: #B0D66B;
+}
+
 
 
 

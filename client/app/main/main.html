@@ -24,16 +24,11 @@
 
 <div class="featured bgcolor">
   <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="headers">Today's Bowl</h2>
-          </div><!--end col-md-11 -->
-          <div class="col-md-1"></div>
-        </div>
           <div class="row">
             <div class="col-md-6">
+            <h2 class="headers">Today's Bowl</h2>
               <div class="panel">
-                <div fx-instagram client-id="6f893f44aa71400b8fdc7d0608ae3bdd" user-id="1802938473" count="1">
+                <div fx-instagram client-id="6f893f44aa71400b8fdc7d0608ae3bdd" user-id="2073058868" count="1">
                 
                   <img class="images-insta" ng-repeat="img in instaImgs" ng-attr-src="{{ img.images.standard_resolution.url }}" alt="">
                
@@ -42,14 +37,26 @@
                 <ul class="transitions falist">
            
               <li><a ng-click="showme=true" ng-hide="showme" class="btn btn-primary btn-lg" href="#" role="button">Place Order</a></li>
-              <li><button ng-show="showme"class="btn btn-primary btn-lg  animate-show-hide" href="#" role="button">Pick Up</button></li>
+              <li><a ui-sref="orderform"><button ng-show="showme"class="btn btn-primary btn-lg  animate-show-hide" href="#" role="button">Pick Up</button></a></li>
               <li><button ng-show="showme" class="btn btn-primary btn-lg  animate-show-hide" href="#" role="button">Catering</button> </li>     
       
               </ul>
             </div>
             <div class="col-md-6">
             <div class="align-left">
-             <img class="photo" src="assets/images/gram.png">
+            <ul class="falist desc">
+             
+              <li><h2 id="line-item"><i class="fa fa-check-square"></i> Reserve Your Bowl</h2></li>
+          
+              <li><h2 id="line-item"><i class="fa fa-check-square"></i> Sign up for Receive Weekly Bowl - CSA Style*</h2></li>
+              
+            </ul>
+            <hr />
+
+            <h3 class="desc">*CSA Style</h3>
+            <p class="desc-sm"> Yes! We serve one bowl a day - sourcing ingredients available locally that week. We can make things less expensive that way. If you sign up ahead - we can save money, and so can you. And you're supporting local farms and businesses. Sign up alone or with friends for a double discount!</p>
+             
+            
              </div>
             </div>
           </div>
@@ -103,7 +110,7 @@
   </div>
 </div>
 
-
+<div class="bgimage">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -113,6 +120,22 @@
 
 
       
+        
+      </div>   
+    </div>
+  </div>
+</div>
+
+   <div class="container">
+    <div class="row">
+          <div class="col-md-5">
+            <h2 id="giant-font">KNOW WHERE YOUR DOLLAR GOES</h2>
+          </div>
+           <div class="col-md-7">
+            <div class="center">
+             <img class="photo-border" src="assets/images/gram.png">
+            </div>
+          </div>
         
       </div>   
     </div>
@@ -155,10 +178,7 @@
     <div class="featured bgimage">
    <div class="container">
     <div class="row">
-     <h2 class="headers">ABOUT US</h2> 
-    <div class="col-lg-7 col-md-7">
-      <img class="photo" src="assets/images/canteen-3.png" alt="Canteen + Co.">
-    </div>
+     <h2 class="headers">ABOUT CANTEEN AND CO.</h2> 
       <div class="col-lg-5">
        
         <p> Canteen + Co. makes eating better possible.
@@ -173,7 +193,10 @@
 
           Let’s eat better, together.
         </p><!--end col-lg-5 -->
-      </div>   
+      </div>  
+       <div class="col-lg-7 col-md-7">
+      <img class="photo" src="assets/images/canteen-3.png" alt="Canteen + Co.">
+    </div> 
     </div><!-- end row -->
   </div><!--end container -->
 </div><!--end featured bgimage -->
@@ -184,7 +207,7 @@
       </div>   
     </div>
   </div>
- <div ng-include="'app/orderform/orderform.html'"></div>
+ 
 
 
 
