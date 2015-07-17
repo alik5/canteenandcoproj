@@ -13,6 +13,8 @@ var spMiddleware = stormpathExpressSdk.createMiddleware();
 module.exports = function(app) {
   spMiddleware.attachDefaults(app);
 
+  
+
   // Insert routes below
   app.use('/api/things', spMiddleware.authenticate, require('./api/thing'));
   
