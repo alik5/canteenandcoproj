@@ -85,8 +85,6 @@
   },
   "scripts": {
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update",
-    "postinstall": "grunt uglify",
-    "start": "node server/app.js",
     "test": "grunt test"
     },
   "private": true
