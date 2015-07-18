@@ -10,7 +10,7 @@ module.exports = function (grunt) {
   }
 
 
-grunt.resgisterTask('heroku:development', 'clean less mincss');
+
 
   // Load grunt tasks automatically, when needed
   require('jit-grunt')(grunt, {
@@ -667,4 +667,6 @@ grunt.resgisterTask('heroku:development', 'clean less mincss');
     'test',
     'build'
   ]);
+
+  grunt.loadNpmTasks('grunt-heroku-deploy');
 };
