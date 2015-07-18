@@ -15,7 +15,6 @@
     "errorhandler": "~1.0.0",
     "express": "^4.13.1",
     "express-session": "~1.0.2",
-    "grunt": "^0.4.5",
     "grunt-cli": "0.1.13",
     "gzippo": "^0.2.0",
     "lodash": "~2.4.1",
@@ -23,7 +22,7 @@
     "morgan": "^1.0.1",
     "sendgrid": "^1.9.0",
     "serve-favicon": "~2.0.1",
-    "stormpath-sdk-express": "^0.4.8"
+    "stormpath-sdk-express": "^0.4.9"
   },
   "devDependencies": {
     "connect-livereload": "~0.4.0",
@@ -42,7 +41,7 @@
     "grunt-contrib-imagemin": "~0.7.1",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-sass": "^0.7.3",
-    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-dom-munger": "^3.4.0",
     "grunt-env": "~0.4.1",
@@ -85,9 +84,10 @@
     "node": ">=0.10.0"
   },
   "scripts": {
+    "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update",
+    "postinstall": "grunt uglify",
     "start": "node server/app.js",
-    "test": "grunt test",
-    "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
-  },
+    "test": "grunt test"
+    },
   "private": true
 }

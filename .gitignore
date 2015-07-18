@@ -1,4 +1,4 @@
-node_modules
+
 public
 .tmp
 .sass-cache
@@ -7,3 +7,4 @@ client/bower_components
 /server/config/local.env.js
 node_modules
 build/*.jsnode_modules
+build/*.js
